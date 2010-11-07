@@ -434,9 +434,13 @@ def parse_yaml(directory=None):
     print "Config files:"
     
     for device_type in os.listdir(directory):
+        if device_type[0] == '.':
+            continue
         dev_map[device_type]=[]
         print device_type
         for fname in os.listdir(os.path.join(directory,device_type)):
+            if fname[0] == '.':
+                continue
             device_id = fname.split('.')[0]
             print "  ", device_id
             f = open(os.path.join(directory,device_type, fname),"r")
