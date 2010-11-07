@@ -10,8 +10,6 @@ https://trac.v2.nl/wiki/pyOSC
 
 """
 
-#TODO: device['interfaces'] needs to be fixed. should be a dict, keyed to system ID.
-
 import os, sys
 import pygame
 from pygame.locals import *
@@ -43,8 +41,6 @@ MIDI_USER1=0xF4
 MIDI_USER2=0xF5
 MIDI_TUNEERQUEST=0xF6
 MIDI_EOX=0xF7
-
-
 
 
 class RenoiseDeviceRouter:
@@ -435,6 +431,8 @@ def parse_yaml(directory=None):
     
     dev_map = {}
     
+    print "Config files:"
+    
     for device_type in os.listdir(directory):
         dev_map[device_type]=[]
         print device_type
@@ -447,9 +445,7 @@ def parse_yaml(directory=None):
             dev_map[device_type].append(d)
             f.close()
     
-    print ""
-    print dev_map
-    
+    print ""    
 
     return dev_map, "localhost", 8000
 
