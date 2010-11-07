@@ -1,0 +1,6 @@
+name: Microsoft X-Box pad v1 (US)
+events:
+       7: axis_motion
+       9: hat_motion
+       10: button_down
+       11: button_up

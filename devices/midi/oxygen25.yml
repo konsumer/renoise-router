@@ -1,0 +1,23 @@
+name: Oxygen 25 MIDI 1
+track: 4 # starts here, but channel will add to this number
+instrument: 4 # starts here, but channel will add to this number
+pitch_control: 5
+control_channel: 12 # channel to send controls to
+events: {
+    144: 'note_on',  128: 'note_off',  176: 'control',  224: 'pitch', # channel  0
+    145: 'note_on',  129: 'note_off',  177: 'control',  225: 'pitch', # channel  1
+    146: 'note_on',  130: 'note_off',  178: 'control',  226: 'pitch', # channel  2
+    147: 'note_on',  131: 'note_off',  179: 'control',  227: 'pitch', # channel  3
+    148: 'note_on',  132: 'note_off',  180: 'control',  228: 'pitch', # channel  4
+    149: 'note_on',  133: 'note_off',  181: 'control',  229: 'pitch', # channel  5
+    150: 'note_on',  134: 'note_off',  182: 'control',  230: 'pitch', # channel  6
+    151: 'note_on',  135: 'note_off',  183: 'control',  231: 'pitch', # channel  7
+    152: 'note_on',  136: 'note_off',  184: 'control',  232: 'pitch', # channel  8
+    153: 'note_on',  137: 'note_off',  185: 'control',  233: 'pitch', # channel  9
+    154: 'note_on',  138: 'note_off',  186: 'control',  234: 'pitch', # channel  10
+    155: 'note_on',  139: 'note_off',  187: 'control',  235: 'pitch', # channel  11
+    156: 'note_on',  140: 'note_off',  188: 'control',  236: 'pitch', # channel  12
+    157: 'note_on',  141: 'note_off',  189: 'control',  237: 'pitch', # channel  13
+    158: 'note_on',  142: 'note_off',  190: 'control',  238: 'pitch', # channel  14
+    159: 'note_on',  143: 'note_off',  191: 'transport_control',  239: 'pitch', # channel  15
+}

@@ -1,0 +1,25 @@
+name: Generic X-Box pad
+track: 0 # starts here, but vol switch will add to this number
+instrument: 0 # starts here, but vol switch will add to this number
+control_channel: 10 # channel to send controls to
+button_controls: # maps buttons to controls
+    10: 10 # back
+    6: 6 # start
+axis_controls: # maps axis to controls and range
+    3:
+        # control to send to
+        control: 3
+        
+        # scale of axis
+        high: 1.000000000000000
+        low: -1.000030518509476
+events:
+    7: axis_motion_guitar
+    9: hat_motion_guitar
+    10: button_down_guitar
+    11: button_up_guitar
+guitar_note_map: # special data for this device, mapping buttons + strum direction to notes
+    # wierd map makes playing good chords easy!
+     - [67, 71, 72, 69, 74]
+     - [60, 64, 65, 62, 69]
+     - [61, 63, 68, 66, 70]
