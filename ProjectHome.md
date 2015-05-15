@@ -1,0 +1,5 @@
+I wanted to use MIDI keyboards and joysticks to control a specific instrument on a specific track, so I made this device router.
+
+I use it in a live set to allow me to play my devices with pre-made effects racks and instrument settings, along with sequenced and vocal tracks.
+
+You must enable renoise's OSC server (in settings.) Think of the included yml files as a base for your own devices. They are written in simple YAML, and should be pretty self-explanatory. Included are examples for basic midi keyboards, an XBOX classic controller (hooked to USB) and an XBOX360 guitar-hero controller (also connected to USB.) I have only tested this in Linux, but it should be cross-platform. It requires python YAML and pygame libraries. The devices are searched by the name as they show up in lists of midi input devices and joysticks by pygame. You can see the output if you run the router in a terminal (to get a list of available devices.)
